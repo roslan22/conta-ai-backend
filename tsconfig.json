@@ -4,7 +4,15 @@
     "target": "es6",
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "rootDir": "./",
-    "outDir": "./build"
-  }
+    "rootDir": "src",
+    "outDir": "build",
+    "experimentalDecorators": true,
+    "types": ["node"],
+    "baseUrl": "src",
+    "paths": {
+      "@api": ["api/index.ts"],
+      "@config": ["config/index.ts"]
+    }
+  },
+  "exclude": ["node_modules", "build"],
 }
