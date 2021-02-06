@@ -37,8 +37,8 @@
     "ext": "ts"
   },
   "_moduleAliases": {
-    "@api": "dist/api/index.js",
-    "@config": "dist/config/index.js"
+    "@api": "/home/contchow/backend/api/index.js",
+    "@config": "/home/contchow/backend/config/index.js"
   },
   "dependencies": {
     "express": "^4.17.1",
