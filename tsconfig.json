@@ -5,14 +5,14 @@
     "esModuleInterop": true,
     "resolveJsonModule": true,
     "rootDir": "src",
-    "outDir": "build",
+    "outDir": "dist",
     "experimentalDecorators": true,
     "types": ["node"],
-    "baseUrl": "src",
+    "baseUrl": "./",
     "paths": {
-      "@api": ["api/index.ts"],
-      "@config": ["config/index.ts"]
+      "@api": ["src/api/index.ts"],
+      "@config": ["src/config/index.ts"]
     }
   },
-  "exclude": ["node_modules", "build"],
+  "exclude": ["node_modules", "dist"],
 }

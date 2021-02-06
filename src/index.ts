@@ -1,3 +1,4 @@
+import 'module-alias/register';
 import { IN_PRODUCTION_MODE, PORT } from '@config';
 import express from 'express';
 

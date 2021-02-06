@@ -36,9 +36,14 @@
     "exec": "node -r tsconfig-paths/register -r ts-node/register ./src/index.ts",
     "ext": "ts"
   },
+  "_moduleAliases": {
+    "@api": "dist/api/index.js",
+    "@config": "dist/config/index.js"
+  },
   "dependencies": {
     "express": "^4.17.1",
     "joi": "^17.3.0",
+    "module-alias": "^2.2.2",
     "mysql": "^2.18.1"
   }
 }
