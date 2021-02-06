@@ -1,10 +1,16 @@
-import { PORT } from '@config';
+import { IN_PRODUCTION_MODE, PORT } from '@config';
 import express from 'express';
 
 const app = express();
 
-app.get('/', (req, res) => res.send('Express Server!'));
+app.get('/', (req, res) =>
+  res.send(`Express Server in ${IN_PRODUCTION_MODE ? 'production mode' : 'development mode'}`),
+);
 
-app.listen(PORT, () => {
-  console.log(`[server]: Server is running at http://localhost:${PORT}`);
-});
+if (IN_PRODUCTION_MODE) {
+  app.listen();
+} else {
+  app.listen(PORT, () => {
+    console.log(`[server]: Server is running at http://localhost:${PORT}`);
+  });
+}
